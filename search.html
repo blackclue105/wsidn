@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Search — WSIDN</title>
+<meta name="description" content="Search practical guides for everyday problems in Pakistan.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;600;700&family=Noto+Nastaliq+Urdu:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="container">
+    <span data-i18n="site.topbarLeft"></span>
+    <span data-i18n="site.topbarRight"></span>
+  </div>
+</div>
+
+<header class="site">
+  <div class="container">
+    <a class="brand" href="index.html">
+      <span class="brand-mark" aria-hidden="true">W</span>
+      <span class="brand-name">WSIDN<span data-i18n="site.name"></span></span>
+    </a>
+    <nav class="main" aria-label="Primary">
+      <a href="index.html#categories" data-i18n="site.navGuides"></a>
+      <a href="search.html"            data-i18n="site.navSearch"></a>
+      <a href="about.html"             data-i18n="site.navAbout"></a>
+      <a class="btn dark" href="index.html#categories" data-i18n="site.navBrowse"></a>
+    </nav>
+    <div class="lang-switch" data-lang-switch aria-label="Language"></div>
+  </div>
+</header>
+
+<main>
+  <section class="hero" style="padding-bottom:1.5rem">
+    <div class="container">
+      <div class="kicker" data-i18n="search.kicker">Search the library</div>
+      <h1 data-i18n="search.h1">Find your problem</h1>
+
+      <form id="search-form" class="search-block" role="search">
+        <span class="search-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="square">
+            <circle cx="10" cy="10" r="7"/><line x1="15.5" y1="15.5" x2="21" y2="21"/>
+          </svg>
+        </span>
+        <label for="q" class="visually-hidden">Search problems</label>
+        <input id="q" type="search" data-i18n-placeholder="search.placeholder" placeholder="e.g. lost CNIC, scam, petrol, SIM" autocomplete="off">
+        <button type="submit" data-i18n="search.btn">
+          Search
+          <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="square">
+            <line x1="4" y1="12" x2="20" y2="12"/><polyline points="14 6 20 12 14 18"/>
+          </svg>
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2 data-i18n="search.results">Results</h2>
+        <span class="mono" id="summary" data-i18n="search.loading">Loading…</span>
+      </div>
+      <div id="results" aria-live="polite"></div>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="container">
+    <div class="cols">
+      <div><h4>WSIDN</h4><p style="margin:0;max-width:40ch" data-i18n="footer.aboutBody"></p></div>
+      <div>
+        <h4 data-i18n="footer.siteH"></h4>
+        <ul>
+          <li><a href="index.html"            data-i18n="footer.home"></a></li>
+          <li><a href="index.html#categories" data-i18n="footer.guides"></a></li>
+          <li><a href="search.html"           data-i18n="footer.search"></a></li>
+          <li><a href="about.html"            data-i18n="footer.about"></a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 data-i18n="footer.policiesH"></h4>
+        <ul>
+          <li><a href="editorial-policy.html"  data-i18n="footer.editorial"></a></li>
+          <li><a href="privacy.html"           data-i18n="footer.privacy"></a></li>
+          <li><a href="about.html#corrections" data-i18n="footer.corrections"></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="bottom">
+      <span>© <span data-year>2025</span> <span data-i18n="footer.copyright"></span></span>
+      <span data-i18n="footer.emergency"></span>
+    </div>
+  </div>
+</footer>
+
+<script src="data/problems.js"></script>
+<script src="data/translations.js"></script>
+<script src="assets/js/i18n.js"></script>
+<script src="assets/js/app.js"></script>
+<script src="assets/js/search.js"></script>
+<script>(async () => { await window.i18n.init(); })();</script>
+</body>
+</html>

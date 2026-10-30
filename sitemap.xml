@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://wsidn.example/</loc><priority>1.0</priority></url>
+  <url><loc>https://wsidn.example/search.html</loc><priority>0.4</priority></url>
+  <url><loc>https://wsidn.example/about.html</loc><priority>0.5</priority></url>
+  <url><loc>https://wsidn.example/editorial-policy.html</loc><priority>0.4</priority></url>
+  <url><loc>https://wsidn.example/privacy.html</loc><priority>0.4</priority></url>
+
+  <url><loc>https://wsidn.example/category.html?cat=phone-sim</loc><priority>0.7</priority></url>
+  <url><loc>https://wsidn.example/category.html?cat=money-scams</loc><priority>0.7</priority></url>
+  <url><loc>https://wsidn.example/category.html?cat=documents</loc><priority>0.7</priority></url>
+  <url><loc>https://wsidn.example/category.html?cat=emergencies</loc><priority>0.7</priority></url>
+  <url><loc>https://wsidn.example/category.html?cat=everyday</loc><priority>0.7</priority></url>
+
+  <url><loc>https://wsidn.example/guide.html?slug=my-sim-stopped-working</loc><priority>0.8</priority></url>
+  <url><loc>https://wsidn.example/guide.html?slug=received-suspicious-call</loc><priority>0.8</priority></url>
+  <url><loc>https://wsidn.example/guide.html?slug=lost-cnic</loc><priority>0.8</priority></url>
+  <url><loc>https://wsidn.example/guide.html?slug=someone-is-unconscious</loc><priority>0.8</priority></url>
+  <url><loc>https://wsidn.example/guide.html?slug=find-nearest-petrol-pump</loc><priority>0.8</priority></url>
+</urlset>

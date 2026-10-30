@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>What Should I Do Now — Practical help for everyday problems in Pakistan</title>
+<meta name="description" content="Practical, verified guides for everyday problems in Pakistan: SIM issues, scams, lost CNIC, emergencies, petrol pumps. Clear next steps. No jargon. No runaround.">
+<meta name="theme-color" content="#F4F0E6">
+<link rel="canonical" href="https://wsidn.example/">
+<meta property="og:title" content="What Should I Do Now (WSIDN)">
+<meta property="og:description" content="Problems happen. Next steps shouldn't be confusing.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;600;700&family=Noto+Nastaliq+Urdu:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="container">
+    <span data-i18n="site.topbarLeft">Independent information service · Pakistan</span>
+    <span>
+      <span data-i18n="site.topbarRight">Emergency? Call 1122</span>
+    </span>
+  </div>
+</div>
+
+<header class="site">
+  <div class="container">
+    <a class="brand" href="index.html">
+      <span class="brand-mark" aria-hidden="true">W</span>
+      <span class="brand-name">
+        WSIDN
+        <span data-i18n="site.name">What Should I Do Now</span>
+      </span>
+    </a>
+    <nav class="main" aria-label="Primary">
+      <a href="index.html#categories" data-i18n="site.navGuides">Guides</a>
+      <a href="search.html"            data-i18n="site.navSearch">Search</a>
+      <a href="about.html"             data-i18n="site.navAbout">About</a>
+      <a class="btn dark" href="index.html#categories" data-i18n="site.navBrowse">Browse</a>
+    </nav>
+    <div class="lang-switch" data-lang-switch aria-label="Language"></div>
+  </div>
+</header>
+
+<main id="home-content">
+
+  <section class="hero">
+    <div class="container">
+      <div class="kicker" data-i18n="home.kicker">Problem solver · Pakistan</div>
+      <h1 data-i18n="home.h1">Problems happen. Next steps shouldn't be confusing.</h1>
+      <p class="lede" data-i18n="home.lede">Practical guides for everyday problems in Pakistan. No unnecessary jargon. No runaround. Just the next step.</p>
+
+      <form id="home-search" class="search-block" role="search">
+        <span class="search-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="square">
+            <circle cx="10" cy="10" r="7"/><line x1="15.5" y1="15.5" x2="21" y2="21"/>
+          </svg>
+        </span>
+        <label for="home-q" class="visually-hidden">Search problems</label>
+        <input id="home-q" type="search" data-i18n-placeholder="home.searchPlaceholder" placeholder="Try: my SIM stopped working" autocomplete="off">
+        <button type="submit" data-i18n="home.searchBtn">
+          Search
+          <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="square">
+            <line x1="4" y1="12" x2="20" y2="12"/><polyline points="14 6 20 12 14 18"/>
+          </svg>
+        </button>
+      </form>
+
+      <p class="search-hint">
+        <span data-i18n="home.popular">Popular:</span>
+        <a href="#" data-search-chip="SIM"      data-i18n="home.chipSim">SIM</a> ·
+        <a href="#" data-search-chip="scam"     data-i18n="home.chipScam">Scam</a> ·
+        <a href="#" data-search-chip="CNIC"     data-i18n="home.chipCnic">CNIC</a> ·
+        <a href="#" data-search-chip="petrol"   data-i18n="home.chipPetrol">Petrol</a> ·
+        <a href="#" data-search-chip="unconscious" data-i18n="home.chipUnconscious">Unconscious</a>
+      </p>
+    </div>
+  </section>
+
+  <section class="section" id="categories">
+    <div class="container">
+      <div class="section-head">
+        <h2 data-i18n="home.browseH">Browse by category</h2>
+        <a href="search.html" data-i18n="home.browseLink">See all guides →</a>
+      </div>
+      <div class="cat-grid" id="cat-grid" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2 data-i18n="home.allGuides">All guides</h2>
+        <span class="mono" data-i18n="home.priorityNote">Emergency guides first</span>
+      </div>
+      <div class="prob-list" id="prob-list" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2 data-i18n="home.howItWorks">How this works</h2>
+      </div>
+      <div class="cat-grid">
+        <div class="cat-card"><span class="num">01</span><h3 data-i18n="home.how1Title">Find the problem</h3><p data-i18n="home.how1Body">Search or answer simple questions.</p></div>
+        <div class="cat-card"><span class="num">02</span><h3 data-i18n="home.how2Title">Get the steps</h3><p data-i18n="home.how2Body">Clear instructions without the fluff.</p></div>
+        <div class="cat-card"><span class="num">03</span><h3 data-i18n="home.how3Title">Reach the source</h3><p data-i18n="home.how3Body">Use verified official resources.</p></div>
+        <div class="cat-card"><span class="num">04</span><h3 data-i18n="home.how4Title">Keep improving</h3><p data-i18n="home.how4Body">We correct errors and add missing guides.</p></div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site">
+  <div class="container">
+    <div class="cols">
+      <div>
+        <h4>WSIDN</h4>
+        <p style="margin:0;max-width:40ch" data-i18n="footer.aboutBody">An independent information service for everyday problems in Pakistan. Not affiliated with any government body, bank, or telecom operator.</p>
+      </div>
+      <div>
+        <h4 data-i18n="footer.siteH">Site</h4>
+        <ul>
+          <li><a href="index.html"               data-i18n="footer.home">Home</a></li>
+          <li><a href="index.html#categories"    data-i18n="footer.guides">Guides</a></li>
+          <li><a href="search.html"              data-i18n="footer.search">Search</a></li>
+          <li><a href="about.html"               data-i18n="footer.about">About</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 data-i18n="footer.policiesH">Policies</h4>
+        <ul>
+          <li><a href="editorial-policy.html"  data-i18n="footer.editorial">Editorial policy</a></li>
+          <li><a href="privacy.html"           data-i18n="footer.privacy">Privacy</a></li>
+          <li><a href="about.html#corrections" data-i18n="footer.corrections">Corrections</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="bottom">
+      <span>© <span data-year>2025</span> <span data-i18n="footer.copyright">WSIDN. Independent.</span></span>
+      <span data-i18n="footer.emergency">If this is an emergency, call 1122.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="data/problems.js"></script>
+<script src="data/translations.js"></script>
+<script src="assets/js/i18n.js"></script>
+<script src="assets/js/app.js"></script>
+<script src="assets/js/home.js"></script>
+<script>
+  // Boot i18n AFTER app.js so DOM bindings apply everywhere
+  (async () => {
+    await window.i18n.init();
+  })();
+</script>
+</body>
+</html>

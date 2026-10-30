@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Category — WSIDN</title>
+<meta name="description" content="Browse guides by category on WSIDN.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;600;700&family=Noto+Nastaliq+Urdu:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="container">
+    <span data-i18n="site.topbarLeft"></span>
+    <span data-i18n="site.topbarRight"></span>
+  </div>
+</div>
+
+<header class="site">
+  <div class="container">
+    <a class="brand" href="index.html">
+      <span class="brand-mark" aria-hidden="true">W</span>
+      <span class="brand-name">WSIDN<span data-i18n="site.name"></span></span>
+    </a>
+    <nav class="main" aria-label="Primary">
+      <a href="index.html#categories" data-i18n="site.navGuides">Guides</a>
+      <a href="search.html"            data-i18n="site.navSearch">Search</a>
+      <a href="about.html"             data-i18n="site.navAbout">About</a>
+      <a class="btn dark" href="index.html#categories" data-i18n="site.navBrowse">Browse</a>
+    </nav>
+    <div class="lang-switch" data-lang-switch aria-label="Language"></div>
+  </div>
+</header>
+
+<main id="category-root">
+  <div class="container"><p style="padding:2rem 0" data-i18n="category.loading">Loading…</p></div>
+</main>
+
+<footer class="site">
+  <div class="container">
+    <div class="cols">
+      <div><h4>WSIDN</h4><p style="margin:0;max-width:40ch" data-i18n="footer.aboutBody"></p></div>
+      <div>
+        <h4 data-i18n="footer.siteH">Site</h4>
+        <ul>
+          <li><a href="index.html"            data-i18n="footer.home">Home</a></li>
+          <li><a href="index.html#categories" data-i18n="footer.guides">Guides</a></li>
+          <li><a href="search.html"           data-i18n="footer.search">Search</a></li>
+          <li><a href="about.html"            data-i18n="footer.about">About</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 data-i18n="footer.policiesH">Policies</h4>
+        <ul>
+          <li><a href="editorial-policy.html"  data-i18n="footer.editorial">Editorial policy</a></li>
+          <li><a href="privacy.html"           data-i18n="footer.privacy">Privacy</a></li>
+          <li><a href="about.html#corrections" data-i18n="footer.corrections">Corrections</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="bottom">
+      <span>© <span data-year>2025</span> <span data-i18n="footer.copyright"></span></span>
+      <span data-i18n="footer.emergency"></span>
+    </div>
+  </div>
+</footer>
+
+<script src="data/problems.js"></script>
+<script src="data/translations.js"></script>
+<script src="assets/js/i18n.js"></script>
+<script src="assets/js/app.js"></script>
+<script src="assets/js/category.js"></script>
+<script>(async () => { await window.i18n.init(); })();</script>
+</body>
+</html>
